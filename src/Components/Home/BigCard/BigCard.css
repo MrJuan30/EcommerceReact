@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Red Hat Display", sans-serif;
+}
+.BigCard {
+  display: flex;
+  place-content: center;
+}
+.BigCard_Container {
+  width: 95%;
+  height: auto;
+  background-color: #c0c0c0;
+  display: grid;
+  place-items: center;
+  padding: .2rem 0 2rem 0;
+}
+.BigCard-Text_Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.BigCard_Title{
+    display: inline;
+    font-size: 1.5rem;
+    color: #2F2F2F;
+    text-decoration: underline;
+}
+.BigCard_Description{
+    color: #2F2F2F;
+    opacity: .8;
+    font-size: 1.2rem;
+}
+
+.BigCard_Image-container{
+    position: relative;
+}
+
+.BigCard_Image{
+    width: 17rem;
+    height: auto;
+    mix-blend-mode: multiply;
+    opacity: .9;
+}
+.BigCard_Btn-Container{
+  margin-top: 1rem;
+  border: 2px solid #2F2F2F;
+  padding: .8rem;
+  cursor: pointer;
+  overflow-y: hidden;
+}
+.BigCard_Btn{
+  color: #348587;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.BigCard_Btn-Container:hover{
+  background-color: #2F2F2F;
+  transition: .8s;
+}

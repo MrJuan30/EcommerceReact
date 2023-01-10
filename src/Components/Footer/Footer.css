@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.Footer_Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #C0C0C0;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.Footer_Text{
+    color: #2f2f2f;
+    opacity: .7;
+}
+.Footer_Title{
+    color: #348587;
+    font-size: 1.5rem;
+    font-weight: 700;
+}

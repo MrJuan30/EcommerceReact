@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.Navbar_Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    border: 1px solid #2F2F2F;
+    width: 100%;
+    height: auto;
+    padding: .7rem;
+}
+
+.NavBar_Title{
+    color: #2F2F2F;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
