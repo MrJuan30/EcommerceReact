@@ -4,6 +4,7 @@ import React, {
     useEffect
 } from 'react'
 import axios from 'axios'
+import ProductCard from './Cards/ProductCard'
 
 const FeaturedProducts = () => {
     const [Products, setProducts] = useState()
@@ -19,6 +20,9 @@ const FeaturedProducts = () => {
     return (
         <div className='Featured'>
             <div className='Featured_Container'>
+                {Products?.map((products) => 
+                <ProductCard products={products} key={products.id}/>
+                )}
             </div>
         </div>
     )

@@ -7,11 +7,11 @@ const Home = () => {
   return (
     <div>
       <div className='Page_Start'>
-        <h1 className='PageStart_Title'>TOP SELLING PRODUCT</h1>
+        <h1 className='PageStart_Title'>Most Sold Product</h1>
         <BigCard />
       </div>
       <div className='FeaturedContent'>
-        <h2 className='Featured_Title'>Featured Products:</h2>
+        <h2 className='Featured_Title'>Top Selling Products:</h2>
         <FeaturedProducts />
       </div>
     </div>
