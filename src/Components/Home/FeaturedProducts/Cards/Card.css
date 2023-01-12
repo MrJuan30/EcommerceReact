@@ -9,3 +9,68 @@
     text-decoration: none;
     font-family: 'Red Hat Display', sans-serif;
 }
+
+.Featured_Container{
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: -1rem;
+}
+
+.Card_Container{
+    width: auto;
+    max-width: 20rem;
+    height: auto;
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #d1d1d1;
+    padding: 1.4rem;
+}
+.Card_Header{
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Card_Image{
+    width: 10rem;
+    height: auto;
+    margin-bottom: 1rem;
+    mix-blend-mode: multiply;
+}
+.Card_Content{
+    position: relative;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Card_Title{
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+.Card_Description{
+    max-height: 5.2rem;
+    overflow: hidden;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.PriceAndCar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.Price_Text{
+    font-size: 1.2rem;
+}
+
+.Card_Price{
+    cursor: pointer;
+}

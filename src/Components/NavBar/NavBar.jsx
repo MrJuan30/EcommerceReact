@@ -9,8 +9,8 @@ const NavBar = () => {
     <div className='NavBar'>
       <div className='Navbar_Container'>
         <h3 className='NavBar_Title'>TechWave</h3>
-        <NavLink to='/'>
-          <box-icon name='shopping-bags' type='solid' color='#2f2f2f' size='2rem'></box-icon>
+        <NavLink to='/' className='ProductsCar_Link'>
+          <box-icon name='shopping-bags' type='solid' color='#2f2f2f' size='2.5rem'></box-icon>
         </NavLink>
       </div>
     </div>
