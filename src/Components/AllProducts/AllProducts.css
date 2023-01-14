@@ -9,3 +9,12 @@
   text-decoration: none;
   font-family: "Red Hat Display", sans-serif;
 }
+.AllProducts_Container{
+  padding-top: 2rem;
+}
+
+.Btn_Back{
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+  cursor: pointer;
+}
