@@ -4,10 +4,11 @@ import React, {
 } from 'react'
 import axios from 'axios'
 import AllProductsCard from './AllProductsCards/AllProductsCard'
+import './AllProducts.css'
 
 const AllProducts = () => {
     const [AllProducts, setAllProducts] = useState()
-    const URL = 'https://fakestoreapi.com/products'
+    const URL = 'https://fakestoreapi.com/products?limit=19'
     useEffect(() => {
         axios
             .get(URL)

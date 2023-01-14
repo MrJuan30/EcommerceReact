@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.Featured_Container{
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: -1rem;
+}
