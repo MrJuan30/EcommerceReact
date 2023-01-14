@@ -1,11 +1,17 @@
 import React from 'react'
 import './AllProductsCard.css'
+import { useNavigate } from "react-router-dom";
 
 const AllProductsCard = ({ allproducts }) => {
+    const navigate = useNavigate()
+
+    const HandleClick = () => {
+        navigate(`/products/${allproducts.id}`)
+    }
     return (
         <div className="Featured_Container">
             <div className='Card'>
-                <div className='Card_Container'>
+                <div className='Card_Container' onClick={HandleClick}>
                     <div className='Card_Header'>
                         <img src={allproducts.image} alt={allproducts.title} className='Card_Image' />
                     </div>

@@ -10,7 +10,7 @@ const ProductCard = ({ products }) => {
     }
     return (
         <div className='Card'>
-            <div className='Card_Container'>
+            <div className='Card_Container' onClick={HandleClick}>
                 <div className='Card_Header'>
                     <img src={products.image} alt={products.title} className='Card_Image' />
                 </div>
