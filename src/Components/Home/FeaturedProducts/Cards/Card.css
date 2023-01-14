@@ -15,13 +15,14 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: -1rem;
+    width: 100%;
 }
 
 .Card_Container{
     width: auto;
     max-width: 20rem;
     height: auto;
-    margin: 3rem 0 3rem 0;
+    margin: 2rem 0 1rem 0;
     display: flex;
     flex-direction: column;
     background-color: #d1d1d1;

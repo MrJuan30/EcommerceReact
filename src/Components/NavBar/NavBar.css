@@ -9,13 +9,19 @@
     text-decoration: none;
     font-family: 'Red Hat Display', sans-serif;
 }
+.NavBar{
+    position: fixed;
+    width: 100%;
+    background-color: #EBEBF0;
+    z-index: 3;
+}
 
 .Navbar_Container{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    border: 1px solid #2F2F2F;
+    border-bottom: 1px solid #2F2F2F;
     width: 100%;
     height: auto;
     padding: .7rem;

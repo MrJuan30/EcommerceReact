@@ -10,8 +10,10 @@
     font-family: 'Red Hat Display', sans-serif;
 }
 .Featured_Container{
-    padding: 1.5rem;
+    padding: 3rem 1.5rem;
     display: grid;
     grid-template-columns: 1fr;
-    gap: -1rem;
+    place-content: center;
+    align-items: center;
+    place-items: center;
 }
