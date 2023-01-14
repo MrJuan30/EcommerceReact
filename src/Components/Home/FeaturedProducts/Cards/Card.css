@@ -74,3 +74,8 @@
 .Card_Price{
     cursor: pointer;
 }
+
+
+.Card_Container:hover{
+    transform: translateY(-5px) scale(1.05) translateZ(0);
+}

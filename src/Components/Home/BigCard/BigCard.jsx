@@ -5,33 +5,27 @@ import React, {
 import axios from 'axios'
 import { NavLink } from 'react-router-dom'
 import './BigCard.css'
+import WomenModel from '../../../assets/ModelPhoto.jpg'
 
 const BigCard = () => {
     const [Product1, setProduct1] = useState()
-    const URL = 'https://fakestoreapi.com/products/1'
-    useEffect(() => {
-        axios
-            .get(URL)
-            .then((res) => setProduct1(res.data))
-            .catch((err) => console.log(err));
-    }, [])
 
     return (
         <div className='BigCard'>
             <div className='BigCard_Container'>
-                <div className='BigCard-Text_Container'>
-                    <h2 className='BigCard_Title'>{Product1?.title}</h2>
-                    <br />
-                    <p className='BigCard_Description'>{Product1?.description}</p>
-                </div>
-                <div className='BigCard_Image-container'>
-                    <img src={Product1?.image} alt={Product1?.title} className='BigCard_Image' />
-                </div>
-                <br />
-                <div className='BigCard_Btn-Container'>
-                    <NavLink to='/' className='BigCard_Btn'>
-                        More Info
+                <div className='TextCard_Container'>
+                    <div className="NewTrentContainer">
+                        <div className='UnderLine_Container'></div>
+                        <p className='NewTrend_Text'>New Trend</p>
+                    </div>
+                    <h3 className='Feeling_Text'>Feeling beautiful is for</h3>
+                    <h1 className='Title_Text'>EVERYONE</h1>
+                    <NavLink to='/' className='Text_Discover'>
+                        Discover More
                     </NavLink>
+                </div>
+                <div className='ModelsContainer'>
+                    <img src={WomenModel} alt="WomenModel"  className='Model'/>
                 </div>
             </div>
         </div>

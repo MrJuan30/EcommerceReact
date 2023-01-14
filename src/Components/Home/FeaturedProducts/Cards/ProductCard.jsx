@@ -1,7 +1,12 @@
 import React from 'react'
 import './Card.css'
+import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({ products }) => {
+    const navigate = useNavigate()
+    const HandleClick = () => {
+        navigate(`/products/${products.id}`)
+    }
     return (
         <div className='Card'>
             <div className='Card_Container'>

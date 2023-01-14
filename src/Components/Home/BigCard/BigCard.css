@@ -14,58 +14,61 @@
   place-content: center;
 }
 .BigCard_Container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #efe0db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: -1rem 0 2rem 0;
+}
+.TextCard_Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  gap: .5rem;
+}
+.NewTrentContainer {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  position: relative;
+}
+.UnderLine_Container {
+  width: 2rem;
+  height: 0.1rem;
+  background-color: #b33d49;
+}
+.NewTrend_Text {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.Feeling_Text{
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.Title_Text{
+  font-size: 3rem;
+  font-weight: 900;
+}
+.ModelsContainer {
+  display: flex;
+  justify-content: center;
+}
+.Model {
   width: 95%;
   height: auto;
-  background-color: #c0c0c0;
-  display: grid;
-  place-items: center;
-  padding: .2rem 0 2rem 0;
+  mix-blend-mode: multiply;
 }
-.BigCard-Text_Container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem;
-}
-
-.BigCard_Title{
-    display: inline;
-    font-size: 1.5rem;
-    color: #2F2F2F;
-    text-decoration: underline;
-}
-.BigCard_Description{
-    color: #2F2F2F;
-    opacity: .8;
-    font-size: 1.2rem;
-}
-
-.BigCard_Image-container{
-    position: relative;
-}
-
-.BigCard_Image{
-    width: 17rem;
-    height: auto;
-    mix-blend-mode: multiply;
-    opacity: .9;
-}
-.BigCard_Btn-Container{
-  margin-top: 1rem;
-  border: 2px solid #2F2F2F;
-  padding: .8rem;
-  cursor: pointer;
-  overflow-y: hidden;
-}
-.BigCard_Btn{
-  color: #6391ae;
-  width: 100%;
-  padding: 1rem;
-  font-size: 1.5rem;
-}
-
-.BigCard_Btn-Container:hover{
-  background-color: #2F2F2F;
-  transition: .8s;
+.Text_Discover{
+  color: #2f2f2f;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
