@@ -20,7 +20,7 @@ const BigCard = () => {
                     </div>
                     <h3 className='Feeling_Text'>Feeling beautiful is for</h3>
                     <h1 className='Title_Text'>EVERYONE</h1>
-                    <NavLink to='/' className='Text_Discover'>
+                    <NavLink to='/products' className='Text_Discover'>
                         Discover More
                     </NavLink>
                 </div>

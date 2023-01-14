@@ -25,7 +25,7 @@ const FeaturedProducts = () => {
                 {Products?.map((products) =>
                     <ProductCard products={products} key={products.id} />
                 )}
-                <NavLink to='/' className='Text_More Text_Discover'>
+                <NavLink to='/products' className='Text_More Text_Discover'>
                     More
                 </NavLink>
             </div>
