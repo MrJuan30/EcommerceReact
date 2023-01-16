@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Red Hat Display", sans-serif;
+}
+.Cart_Content_Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+.Cart_Container{
+    display: grid;
+    place-content: center;
+
+}
+.Cart_Container_Top{
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+.GoBack_Btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+}
+.Cart_Title{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.ItemCard_Container{
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+}
+
+.ProductImage_Cart{
+    width: 3.5rem;
+    height: auto;
+    margin-right: 1rem;
+    mix-blend-mode: multiply;
+}
+
+.Item_Description{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 7rem;
+    margin-right: 1rem;
+}
+.Product_Title_Cart{
+    font-size: 1rem;
+}
+.Item_Header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Item_Price_Container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.Product_Price_Cart{
+    color: #d61313;
+    font-size: 1rem;
+}
+
+.Buttons_PlussAndLess{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    width: 2rem;
+    
+}
+.Plus_Btn{
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.ProductQuantity_Text{
+    font-size: 1.3rem;
+}
+.Less_Btn{
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+}
+
+.Delete_Btn_Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Delete_Btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background: none;
+    border: none;
+}

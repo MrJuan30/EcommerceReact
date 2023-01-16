@@ -12,12 +12,8 @@ const AllProductsCard = ({ allproducts }) => {
 
     const Globalstate=useContext(CartContext);
     const dispatch = Globalstate.dispatch;
-    console.log(Globalstate)
 
-
-
-
-
+    
     return (
         <div className="Featured_Container">
             <div className='Card'>
