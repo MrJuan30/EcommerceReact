@@ -17,3 +17,8 @@
     align-items: center;
     place-items: center;
 }
+
+.Card_Btn_Add{
+    background: none;
+    border: none;
+}
