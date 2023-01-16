@@ -1,8 +1,9 @@
 import axios from 'axios'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import { useNavigate } from "react-router-dom";
 import './ProductsById.css'
+import { CartContext } from '../../context/Context';
 
 
 const ProductsById = () => {
@@ -21,12 +22,16 @@ const ProductsById = () => {
         seterror(true)
       });
   }, [id]);
-
+    ProductById.quantity = 1;
   const navigate = useNavigate()
 
   const HandleBack = () => {
     navigate(`/products`)
   }
+
+
+  const Globalstate=useContext(CartContext);
+  const dispatch = Globalstate.dispatch;
   return (
     <div className='ProductById'>
       <div className='ProductById_Container'>
@@ -46,8 +51,9 @@ const ProductsById = () => {
         </div>
         <div className="ProductById_Footer">
           <p className='ProductById_Price-Text'>$ {ProductById?.price}</p>
-          <box-icon name='cart-add' size='2rem'></box-icon>
-
+          <button
+          onClick={() => dispatch({type: 'ADD', payload: ProductById})}
+          className='Btn_Add_To_Cart'><box-icon name='cart-add' size='2rem'></box-icon></button>
         </div>
       </div>
 

@@ -22,8 +22,12 @@ const FeaturedProducts = () => {
     return (
         <div className='Featured'>
             <div className='Featured_Container'>
-                {Products?.map((products) =>
-                    <ProductCard products={products} key={products.id} />
+                {Products?.map((products) => {
+                    products.quantity = 1;
+                    return (
+                        <ProductCard products={products} key={products.id} />
+                    )
+                }
                 )}
                 <NavLink to='/products' className='Text_More Text_Discover'>
                     More

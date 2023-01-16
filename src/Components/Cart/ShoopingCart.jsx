@@ -37,7 +37,6 @@ const ShoopingCart = () => {
 
           <div className="Cart_Content_Container">
             {state.map((item, index) => {
-              item.quantity = 1
               return (
                 <div className="Card-Content_Container" key={index}>
                   <div className="ItemCard_Container">
@@ -48,7 +47,7 @@ const ShoopingCart = () => {
                       </div>
                     </div>
                     <div className="Item_Price_Container">
-                      <p className='Product_Price_Cart'>${item.price}</p>
+                      <p className='Product_Price_Cart'>${Math.trunc(item.price * item.quantity)}</p>
                     </div>
                     <div className='Buttons_PlussAndLess'>
 
@@ -57,16 +56,25 @@ const ShoopingCart = () => {
                         <box-icon name='plus'></box-icon>
                       </button>
                       <p className='ProductQuantity_Text'>{item.quantity}</p>
-                      <button className='Less_Btn'><box-icon name='minus'></box-icon></button>
+                      <button className='Less_Btn'
+                        onClick={() => {
+                          if (item.quantity > 1) {
+                            dispatch({ type: "DECREASE", payload: item });
+                          } else {
+                            dispatch({ type: "REMOVE", payload: item });
+                          }
+                        }}><box-icon name='minus'></box-icon></button>
                     </div>
                     <div className='Delete_Btn_Container'>
-                      <button className='Delete_Btn'><box-icon name='trash' ></box-icon></button>
+                      <button className='Delete_Btn'
+                        onClick={() => dispatch({ type: "REMOVE", payload: item })}><box-icon name='trash' ></box-icon></button>
                     </div>
                   </div>
                   <hr />
                 </div>
               )
             })}
+            <h3 className='TotalCart_Text'>Total: { Math.trunc(total)} $</h3>
           </div>
 
         </div>

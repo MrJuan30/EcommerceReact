@@ -75,6 +75,8 @@
 
 .Card_Price{
     cursor: pointer;
+    border: none;
+    background: none;
 }
 
 

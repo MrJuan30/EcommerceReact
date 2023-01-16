@@ -55,3 +55,9 @@
 .ProductById_Price-Text{
     font-size: 2rem;
 }
+
+.Btn_Add_To_Cart{
+    border: none;
+    background: none;
+    cursor: pointer;
+}

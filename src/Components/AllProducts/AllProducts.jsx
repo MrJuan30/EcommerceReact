@@ -27,8 +27,12 @@ const AllProducts = () => {
         <div className='Btn_Back'>
           <box-icon name='chevron-left' size='4rem' onClick={HandleBack}></box-icon>
         </div>
-        {AllProducts?.map((allproducts) =>
-          <AllProductsCard allproducts={allproducts} key={allproducts.id} />
+        {AllProducts?.map((allproducts) => {
+          allproducts.quantity = 1;
+          return (
+            <AllProductsCard allproducts={allproducts} key={allproducts.id} />
+          )
+        }
         )}
       </div>
     </div>

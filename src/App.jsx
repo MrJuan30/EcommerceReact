@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './App.css'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import NavBar from './Components/NavBar/NavBar'
 import Home from './Components/Home/Home'
 import 'boxicons'
@@ -10,7 +10,16 @@ import ProductsById from './Components/ProductsById/ProductsById'
 import ShoopingCart from './Components/Cart/ShoopingCart'
 import { Context } from './context/Context'
 
+
 function App() {
+
+  const routePath = useLocation();
+  const onTop = () => {
+    window.scrollTo(0, 0);
+  }
+  useEffect(() => {
+    onTop()
+  }, [routePath]);
 
   return (
     <div className="App">
@@ -19,7 +28,6 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path="/products" element={<AllProducts />} />
-          <Route path="/products/:id" element={<ProductsById />} />
           <Route path="/MyCart" element={<ShoopingCart />} />
         </Routes>
         <Footer />
