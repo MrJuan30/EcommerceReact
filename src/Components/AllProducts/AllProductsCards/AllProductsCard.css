@@ -9,7 +9,8 @@
     text-decoration: none;
     font-family: 'Red Hat Display', sans-serif;
 }
-.Featured_Container{
+
+.AllProducts_Container{
     padding: 1rem 1.5rem;
     display: grid;
     grid-template-columns: 1fr;
@@ -21,4 +22,5 @@
 .Card_Btn_Add{
     background: none;
     border: none;
+    cursor: pointer;
 }

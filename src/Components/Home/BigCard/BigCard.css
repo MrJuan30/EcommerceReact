@@ -72,3 +72,31 @@
   text-transform: uppercase;
   text-decoration: underline;
 }
+
+
+@media screen and (min-width: 767px){
+  .BigCard_Container {
+    flex-direction: row;
+    padding: 5rem;
+  }
+  .Feeling_Text{
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1440px){
+  .UnderLine_Container {
+    width: 3rem;
+  }
+  .NewTrend_Text {
+    font-size: 1.4rem;
+  }
+  .Feeling_Text{
+    font-size: 1.6rem;
+  }
+  .Title_Text{
+    font-size: 4rem;
+  }
+  .Text_Discover{
+    font-size: 1.6rem;
+  }
+}

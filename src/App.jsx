@@ -6,7 +6,6 @@ import Home from './Components/Home/Home'
 import 'boxicons'
 import Footer from './Components/Footer/Footer'
 import AllProducts from './Components/AllProducts/AllProducts'
-import ProductsById from './Components/ProductsById/ProductsById'
 import ShoopingCart from './Components/Cart/ShoopingCart'
 import { Context } from './context/Context'
 

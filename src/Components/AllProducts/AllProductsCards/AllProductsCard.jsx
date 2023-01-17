@@ -1,21 +1,18 @@
 import React, { useContext } from 'react'
 import './AllProductsCard.css'
-import { useNavigate } from "react-router-dom";
+
 import { CartContext } from '../../../context/Context';
 
 const AllProductsCard = ({ allproducts }) => {
 
-    const navigate = useNavigate()
-    const HandleClick = () => {
-        navigate(`/products/${allproducts.id}`)
-    }
 
-    const Globalstate=useContext(CartContext);
+    /*-------------CONTEXT API----------------*/
+    const Globalstate = useContext(CartContext);
     const dispatch = Globalstate.dispatch;
 
-    
+
     return (
-        <div className="Featured_Container">
+        <div className="AllProducts_Container">
             <div className='Card'>
                 <div className='Card_Container' >
                     <div className='Card_Header'>
@@ -26,7 +23,8 @@ const AllProductsCard = ({ allproducts }) => {
                         <p className='Card_Description'>{allproducts.description}</p>
                         <div className='PriceAndCar'>
                             <p className='Price_Text'>${allproducts.price} USD </p>
-                            <button onClick={() => dispatch({type: 'ADD', payload: allproducts})} className='Card_Btn_Add'><box-icon name='cart-add' color='#2f2f2f' size='2.5rem'></box-icon></button>
+                            {/*BTN ADD TO CART LOGIC, AND CONTEXT API*/}
+                            <button onClick={() => dispatch({ type: 'ADD', payload: allproducts })} className='Card_Btn_Add'><box-icon name='cart-add' color='#2f2f2f' size='2.5rem'></box-icon></button>
                         </div>
                     </div>
                 </div>

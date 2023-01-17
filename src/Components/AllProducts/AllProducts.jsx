@@ -6,12 +6,13 @@ import axios from 'axios'
 import AllProductsCard from './AllProductsCards/AllProductsCard'
 import './AllProducts.css'
 import { useNavigate } from 'react-router-dom'
+import LoadingPage from '../LoadingPage/LoadingPage'
 
 const AllProducts = () => {
   const navigate = useNavigate()
 
   const HandleBack = () => {
-    navigate(`/`)
+    navigate(-1)
   }
   const [AllProducts, setAllProducts] = useState()
   const URL = 'https://fakestoreapi.com/products?limit=19'
@@ -21,20 +22,40 @@ const AllProducts = () => {
       .then((res) => setAllProducts(res.data))
       .catch((err) => console.log(err))
   }, [])
+
+
+  const [Loading, setLoading] = useState()
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 6000)
+
+  }, [])
+
+
   return (
     <div>
-      <div className='AllProducts_Container'>
-        <div className='Btn_Back'>
-          <box-icon name='chevron-left' size='4rem' onClick={HandleBack}></box-icon>
+      {Loading ?
+
+        <LoadingPage />
+
+        :
+        <div>
+          <div className='AllProducts_Container'>
+            <div className='Btn_Back'>
+              <box-icon name='chevron-left' size='4rem' onClick={HandleBack}></box-icon>
+            </div>
+            {AllProducts?.map((allproducts) => {
+              allproducts.quantity = 1;
+              return (
+                <AllProductsCard allproducts={allproducts} key={allproducts.id} />
+              )
+            }
+            )}
+          </div>
         </div>
-        {AllProducts?.map((allproducts) => {
-          allproducts.quantity = 1;
-          return (
-            <AllProductsCard allproducts={allproducts} key={allproducts.id} />
-          )
-        }
-        )}
-      </div>
+      }
     </div>
   )
 }

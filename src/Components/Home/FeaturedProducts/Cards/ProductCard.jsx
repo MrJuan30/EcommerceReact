@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import './Card.css'
-import { useNavigate } from "react-router-dom";
 import { CartContext } from '../../../../context/Context';
 
 
@@ -9,16 +8,11 @@ const ProductCard = ({ products }) => {
     const Globalstate = useContext(CartContext);
     const dispatch = Globalstate.dispatch;
 
-    const navigate = useNavigate()
-
-    const HandleClick = () => {
-        navigate(`/products/${products.id}`)
-    }
     return (
         <div className='Card'>
             <div className='Card_Container' >
                 <div className='Card_Header'>
-                    <img src={products.image} alt={products.title} className='Card_Image' onClick={HandleClick} />
+                    <img src={products.image} alt={products.title} className='Card_Image' />
                 </div>
                 <div className='Card_Content'>
                     <h4 className='Card_Title'>{products.title}</h4>

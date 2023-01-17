@@ -32,3 +32,23 @@
 .Featured_Title{
     font-size: 1.3rem;
 }
+
+
+
+@media screen and (min-width: 767px){
+    .Featured_Title{
+        font-size: 1.7rem;
+    }
+  }
+  @media screen and (min-width: 1023px){
+    .Featured_Title{
+        font-size: 2rem;
+    }
+
+    
+  }
+  @media screen and (min-width: 1439px){
+    .Featured_Title{
+        font-size: 2.5rem;
+    }
+  }

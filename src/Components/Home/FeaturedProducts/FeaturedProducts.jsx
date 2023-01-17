@@ -10,7 +10,7 @@ import { NavLink } from 'react-router-dom'
 
 const FeaturedProducts = () => {
     const [Products, setProducts] = useState()
-    const URL = 'https://fakestoreapi.com/products?limit=8'
+    const URL = 'https://fakestoreapi.com/products?limit=6'
     useEffect(() => {
         axios
             .get(URL)
@@ -29,10 +29,10 @@ const FeaturedProducts = () => {
                     )
                 }
                 )}
-                <NavLink to='/products' className='Text_More Text_Discover'>
-                    More
-                </NavLink>
             </div>
+            <NavLink to='/products' className='Text_More Text_Discover'>
+                More
+            </NavLink>
         </div>
     )
 }

@@ -38,7 +38,7 @@
 }
 .Card_Image{
     width: 10rem;
-    height: auto;
+    height: 12rem;
     margin-bottom: 1rem;
     mix-blend-mode: multiply;
 }
@@ -49,11 +49,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 .Card_Title{
     text-transform: capitalize;
     font-size: 1.4rem;
     font-weight: 900;
+    max-height: 2rem;
+    overflow: hidden;
 }
 .Card_Description{
     max-height: 5.2rem;
@@ -83,3 +86,17 @@
 .Card_Container:hover{
     transform: translateY(-5px) scale(1.05) translateZ(0);
 }
+
+
+@media screen and (min-width: 1023px){
+    .Featured_Container{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+  }
+  @media screen and (min-width: 1439px){
+    .Featured_Container{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+  }

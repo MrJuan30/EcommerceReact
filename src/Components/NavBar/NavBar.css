@@ -18,7 +18,7 @@
 
 .Navbar_Container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 8rem;
     border-bottom: 1px solid #2F2F2F;
@@ -31,3 +31,4 @@
     font-size: 1.5rem;
     font-weight: 400;
 }
+
