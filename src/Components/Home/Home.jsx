@@ -10,7 +10,7 @@ const Home = () => {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 6000)
+    }, 3000)
 
   }, [])
 
@@ -18,8 +18,8 @@ const Home = () => {
     <div>
       {
         Loading ?
-        <LoadingPage/>
-        :
+          <LoadingPage />
+          :
           <div>
             <div className='Page_Start'>
               <BigCard />
@@ -29,7 +29,6 @@ const Home = () => {
               <FeaturedProducts />
             </div>
           </div>
-
       }
 
     </div>

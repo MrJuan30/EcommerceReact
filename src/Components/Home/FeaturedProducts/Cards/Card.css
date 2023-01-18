@@ -1,102 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    list-style-type: none;
-    text-decoration: none;
-    font-family: 'Red Hat Display', sans-serif;
-}
-
-.Featured_Container{
-    padding: 1.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: -1rem;
-    width: 100%;
-    height: auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Red Hat Display", sans-serif;
 }
 
-.Card_Container{
-    width: auto;
-    max-width: 20rem;
-    height: auto;
-    margin: 2rem 0 1rem 0;
-    display: flex;
-    flex-direction: column;
-    background-color: #d1d1d1;
-    padding: 1.4rem;
+.Featured_Container {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: -1rem;
+  width: 100%;
+  height: auto;
 }
-.Card_Header{
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+
+.Card_Container {
+  width: auto;
+  max-width: 20rem;
+  height: auto;
+  margin: 2rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #d1d1d1;
+  padding: 1.4rem;
 }
-.Card_Image{
-    width: 10rem;
-    height: 12rem;
-    margin-bottom: 1rem;
-    mix-blend-mode: multiply;
+.Card_Header {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.Card_Content{
-    position: relative;
+.Card_Image {
+  width: 10rem;
+  height: 12rem;
+  margin-bottom: 1rem;
+  mix-blend-mode: multiply;
+}
+.Card_Content {
+  position: relative;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Card_Title {
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  font-weight: 900;
+  max-height: 2rem;
+  overflow: hidden;
+}
+.Card_Description {
+  max-height: 5.2rem;
+  overflow: hidden;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.PriceAndCar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.Price_Text {
+  font-size: 1.2rem;
+}
+
+.Card_Price {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.Card_Container:hover {
+  transform: translateY(-5px) scale(1.05) translateZ(0);
+}
+
+@media screen and (min-width: 1023px) {
+  .Featured_Container {
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-}
-.Card_Title{
-    text-transform: capitalize;
-    font-size: 1.4rem;
-    font-weight: 900;
-    max-height: 2rem;
-    overflow: hidden;
-}
-.Card_Description{
-    max-height: 5.2rem;
-    overflow: hidden;
-    font-size: 1.2rem;
-    font-weight: 200;
-}
-
-.PriceAndCar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-}
-
-.Price_Text{
-    font-size: 1.2rem;
-}
-
-.Card_Price{
-    cursor: pointer;
-    border: none;
-    background: none;
-}
-
-
-.Card_Container:hover{
-    transform: translateY(-5px) scale(1.05) translateZ(0);
-}
-
-
-@media screen and (min-width: 1023px){
-    .Featured_Container{
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
   }
-  @media screen and (min-width: 1439px){
-    .Featured_Container{
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 2rem;
-    }
+}
+@media screen and (min-width: 1439px) {
+  .Featured_Container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
   }
+}

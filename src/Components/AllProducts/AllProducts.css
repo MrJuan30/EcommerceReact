@@ -9,12 +9,32 @@
   text-decoration: none;
   font-family: "Red Hat Display", sans-serif;
 }
-.AllProducts_Container{
+.AllProducts_Container {
   padding-top: 2rem;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-content: center;
+  place-items: center;
+}
+.Btn_Back {
+  display: flex;
+  padding-top: 4rem;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.Btn_Back{
-  margin-top: 2rem;
-  margin-bottom: -2rem;
-  cursor: pointer;
+@media screen and (min-width: 767px) {
+  .AllProducts_Container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .AllProducts_Container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

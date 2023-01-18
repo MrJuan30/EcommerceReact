@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import './Card.css'
 import { CartContext } from '../../../../context/Context';
 
@@ -7,6 +7,8 @@ const ProductCard = ({ products }) => {
 
     const Globalstate = useContext(CartContext);
     const dispatch = Globalstate.dispatch;
+
+
 
     return (
         <div className='Card'>
@@ -19,7 +21,12 @@ const ProductCard = ({ products }) => {
                     <p className='Card_Description'>{products.description}</p>
                     <div className='PriceAndCar'>
                         <p className='Price_Text'>${products.price} USD </p>
-                        <button onClick={() => dispatch({ type: 'ADD', payload: products })} className='Card_Price'><box-icon name='cart-add' color='#2f2f2f' size='2.5rem'></box-icon></button>
+                        <button
+                            onClick={
+                                () =>
+                                    dispatch({
+                                        type: 'ADD', payload: products
+                                    })} className='Card_Price'><box-icon name='cart-add' color='#2f2f2f' size='2.5rem'></box-icon></button>
                     </div>
                 </div>
             </div>

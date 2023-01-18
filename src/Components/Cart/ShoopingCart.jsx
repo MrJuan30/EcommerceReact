@@ -43,7 +43,7 @@ const ShoopingCart = () => {
         Loading ?
 
           <LoadingPage />
-        
+
           :
           <div className='Cart'>
             <div className='Cart_Container'>
@@ -52,13 +52,11 @@ const ShoopingCart = () => {
                 <br />
                 <br />
                 <br />
+                <h1 className='Cart_Title'>Your Cart</h1>
                 <div className="Cart_Container_Top">
-                  <h2 onClick={HandleBack} className='GoBack_Btn'><box-icon name='chevron-left' size='4rem'></box-icon></h2>
-                  <h1 className='Cart_Title'>Your Cart:</h1>
+                  <button onClick={HandleBack} className='GoBack_Btn'><box-icon name='chevron-left' size='4rem'></box-icon></button>
                 </div>
-
                 <hr />
-
                 <div className="Cart_Content_Container">
                   {state.map((item, index) => {
                     return (

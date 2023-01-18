@@ -1,34 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    list-style-type: none;
-    text-decoration: none;
-    font-family: 'Red Hat Display', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Red Hat Display", sans-serif;
 }
-.NavBar{
-    position: fixed;
-    width: 100%;
-    background-color: #EBEBF0;
-    z-index: 3;
-}
-
-.Navbar_Container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8rem;
-    border-bottom: 1px solid #2F2F2F;
-    width: 100%;
-    height: auto;
-    padding: .7rem;
-}
-.NavBar_Title{
-    color: #2F2F2F;
-    font-size: 1.5rem;
-    font-weight: 400;
+.NavBar {
+  position: fixed;
+  width: 100%;
+  background-color: #ebebf0;
+  z-index: 3;
 }
 
+.Navbar_Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #2f2f2f;
+  width: 100%;
+  height: auto;
+  padding: 0.7rem 2rem;
+  overflow-x: hidden;
+}
+.NavBar_Title {
+  color: #2f2f2f;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.Cart_Logo_Items {
+  background-color: #000000;
+  border-radius: 1rem;
+  width: 1.4rem;
+  bottom: 0.5rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: #ffffff;
+}

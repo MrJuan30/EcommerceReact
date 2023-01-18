@@ -12,7 +12,7 @@ const AllProductsCard = ({ allproducts }) => {
 
 
     return (
-        <div className="AllProducts_Container">
+        <div className="AllProducts_Container_Card">
             <div className='Card'>
                 <div className='Card_Container' >
                     <div className='Card_Header'>

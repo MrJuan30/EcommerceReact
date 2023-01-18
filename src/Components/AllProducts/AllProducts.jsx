@@ -29,7 +29,7 @@ const AllProducts = () => {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 6000)
+    }, 3000)
 
   }, [])
 
@@ -42,10 +42,10 @@ const AllProducts = () => {
 
         :
         <div>
+          <div className='Btn_Back'>
+            <box-icon name='chevron-left' size='4rem' onClick={HandleBack}></box-icon>
+          </div>
           <div className='AllProducts_Container'>
-            <div className='Btn_Back'>
-              <box-icon name='chevron-left' size='4rem' onClick={HandleBack}></box-icon>
-            </div>
             {AllProducts?.map((allproducts) => {
               allproducts.quantity = 1;
               return (
