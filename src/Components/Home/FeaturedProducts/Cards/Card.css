@@ -86,12 +86,22 @@
   transform: translateY(-5px) scale(1.05) translateZ(0);
 }
 
+@media screen and (min-width: 425px) {
+  .Card_Description {
+    max-height: 6.5rem;
+    overflow: hidden;
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+}
+
 @media screen and (min-width: 1023px) {
   .Featured_Container {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
 }
+
 @media screen and (min-width: 1439px) {
   .Featured_Container {
     grid-template-columns: 1fr 1fr 1fr;
