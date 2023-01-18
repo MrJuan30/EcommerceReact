@@ -1,3 +1,3 @@
 # Ecommerce  React
 
-Ecommerce made with react, Axios, Css and Vainilla JavaScript, using the FakeStore API
+Ecommerce made with React Js, Axios, Css, Vainilla JavaScript and the Context Api, using the FakeStore API
