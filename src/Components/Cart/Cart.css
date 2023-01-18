@@ -9,12 +9,12 @@
   text-decoration: none;
   font-family: "Red Hat Display", sans-serif;
 }
-.Cart_Content_Container {
+.Cart-Content_Container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
+  border: 2px solid #2f2f2f;
 }
 .Cart_Container {
   display: flex;
@@ -33,6 +33,7 @@
   align-items: center;
   border: none;
   background: none;
+  cursor: pointer;
 }
 .Cart_Title {
   display: flex;
@@ -42,10 +43,15 @@
 
 .ItemCard_Container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
   width: 100%;
   height: auto;
   padding: 3rem 0;
+  border-top: 0.1rem solid #2f2f2f;
+  width: 100vw;
+  margin-top: 0.1rem;
 }
 
 .ProductImage_Cart {
@@ -64,7 +70,7 @@
 }
 .Product_Title_Cart {
   font-size: 1rem;
-  max-height: 5.6rem;
+  max-height: 5.5rem;
   overflow: hidden;
 }
 .Item_Header {
@@ -135,13 +141,124 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  border-top: 0.1rem solid #2f2f2f;
+  width: 100vw;
+  margin-top: 0.1rem;
 }
 .TotalCart_Text {
   margin: 2rem 1rem;
+  font-weight: 400;
+  text-decoration: underline;
 }
 
-@media screen and (min-width: 767px) {
-  .AllProducts_Container {
-    grid-template-columns: 1fr 1fr;
+@media screen and (min-width: 670px) {
+  .Cart_Title {
+    font-size: 2.5rem;
+  }
+  .ProductImage_Cart {
+    width: 5rem;
+  }
+  .Item_Description {
+    width: 9rem;
+  }
+  .Product_Title_Cart {
+    font-size: 1.3rem;
+    max-height: 8.5rem;
+    margin-left: 3rem;
+  }
+  .Product_Price_Cart {
+    font-size: 1.5rem;
+  }
+  .Buttons_PlussAndLess {
+    flex-direction: row;
+    width: 6rem;
+    margin: 0 2rem;
+  }
+  .Plus_Btn {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+  }
+  .ProductQuantity_Text {
+    font-size: 1.7rem;
+  }
+  .TotalCart_Text {
+    margin: 2rem 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .Cart_Title {
+    font-size: 3rem;
+  }
+  .ProductImage_Cart {
+    width: 7rem;
+  }
+  .Item_Description {
+    width: 16rem;
+  }
+  .Product_Title_Cart {
+    font-size: 1.6rem;
+    max-height: 8.5rem;
+    margin-left: 3rem;
+  }
+  .Product_Price_Cart {
+    font-size: 1.8rem;
+  }
+  .Buttons_PlussAndLess {
+    flex-direction: row;
+    width: 7rem;
+    margin: 0 2rem;
+  }
+  .Plus_Btn {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+  }
+  .ProductQuantity_Text {
+    font-size: 2.2rem;
+  }
+  .TotalCart_Text {
+    margin: 2rem 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 1390px) {
+  .Cart_Title {
+    font-size: 3.5rem;
+  }
+  .ProductImage_Cart {
+    width: 9rem;
+  }
+  .Item_Description {
+    width: 20rem;
+    margin: 0 3rem;
+  }
+  .Product_Title_Cart {
+    font-size: 2rem;
+    max-height: 8.5rem;
+    margin: 2rem;
+  }
+  .Product_Price_Cart {
+    font-size: 2.3rem;
+    margin: 0 2rem;
+  }
+  .Buttons_PlussAndLess {
+    flex-direction: row;
+    width: 10rem;
+    margin: 0 5rem;
+  }
+  .Plus_Btn {
+    font-size: 1.5rem;
+  }
+  .ProductQuantity_Text {
+    font-size: 2.5rem;
+  }
+  .TotalCart_Text {
+    margin: 2rem 1rem;
+    font-size: 3rem;
+    font-weight: 400;
   }
 }

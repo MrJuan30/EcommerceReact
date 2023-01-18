@@ -37,10 +37,11 @@
   flex-direction: column;
 }
 .Card_Image {
-  width: 10rem;
-  height: 12rem;
+  width: 90%;
+  height: 14rem;
   margin-bottom: 1rem;
   mix-blend-mode: multiply;
+  aspect-ratio: 16/9;
 }
 .Card_Content {
   position: relative;

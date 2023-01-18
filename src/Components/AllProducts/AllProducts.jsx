@@ -29,7 +29,7 @@ const AllProducts = () => {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 3000)
+    }, 5000)
 
   }, [])
 

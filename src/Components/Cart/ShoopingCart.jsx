@@ -56,7 +56,6 @@ const ShoopingCart = () => {
                 <div className="Cart_Container_Top">
                   <button onClick={HandleBack} className='GoBack_Btn'><box-icon name='chevron-left' size='4rem'></box-icon></button>
                 </div>
-                <hr />
                 <div className="Cart_Content_Container">
                   {state.map((item, index) => {
                     return (
@@ -89,10 +88,9 @@ const ShoopingCart = () => {
                           </div>
                           <div className='Delete_Btn_Container'>
                             <button className='Delete_Btn'
-                              onClick={() => dispatch({ type: "REMOVE", payload: item })}><box-icon name='trash' ></box-icon></button>
+                              onClick={() => dispatch({ type: "REMOVE", payload: item })}><box-icon name='trash' size='2rem' ></box-icon></button>
                           </div>
                         </div>
-                        <hr />
                       </div>
                     )
                   })}
