@@ -131,6 +131,14 @@
   background: none;
   border: none;
 }
+.Total_Container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.TotalCart_Text {
+  margin: 2rem 1rem;
+}
 
 @media screen and (min-width: 767px) {
   .AllProducts_Container {

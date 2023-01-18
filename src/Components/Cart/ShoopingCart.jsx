@@ -96,7 +96,9 @@ const ShoopingCart = () => {
                       </div>
                     )
                   })}
-                  <h3 className='TotalCart_Text'>Total: {Math.trunc(total)} $</h3>
+                  <div className='Total_Container'>
+                    <h3 className='TotalCart_Text'>Total: {Math.trunc(total)} $</h3>
+                  </div>
                 </div>
 
               </div>
