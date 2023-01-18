@@ -8,7 +8,7 @@ const Footer = () => {
                 <br />
                 <p className='Footer_Title'>TechWave</p>
                 <br />
-                <p className='Footer_Text'>Designed By Sebastian Cantor</p>
+                <p className='Footer_Text'>Designed By Sebastian Cantor and Santiago Capera</p>
             </div>
         </div>
     )
