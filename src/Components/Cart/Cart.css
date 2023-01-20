@@ -137,6 +137,7 @@
   height: 2rem;
   background: none;
   border: none;
+  cursor: pointer;
 }
 .Total_Container {
   width: 100%;
