@@ -121,6 +121,7 @@
   justify-content: center;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .Delete_Btn_Container {
